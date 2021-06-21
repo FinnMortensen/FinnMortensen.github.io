@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script>
+
+function scaleOn() {
+	document.getElementById("content").className = "scale";
+}
+
+function scaleOff() {
+	document.getElementById("content").className = "None";
+}
+
+</script>
+
+</head>
+<body>
+<div class="scale" id="content">
+
+<button onclick="scaleOn()">Scale on.</button>
+<button onclick="scaleOff()">Scale off.</button>
+
+<p>
+Test.
+</p>
+
+</div>
+</body>
+</html>
