@@ -1,34 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Mock up</title>
-
 <link rel="stylesheet" type="text/css" href="style.css">
 
 <script>
 
+var scale = "True";
+
 function scaleOn() {
 	document.getElementById("content").className = "scale";
+		scale = "True";
 }
 
 function scaleOff() {
 	document.getElementById("content").className = "None";
+		scale = "False";
+}
+
+function scaleToggle() {
+	if (scale == "True") {
+		document.getElementById("content").className = "None";
+		scale = "False";
+	}
+	else {
+		document.getElementById("content").className = "scale";
+		scale = "True";
+	}
 }
 
 </script>
 
 </head>
 <body>
-<iframe src="topbar.html" id="topbar"></iframe>
-<div class="scale" id="content">
 
-<button onclick="scaleOn()">Scale on.</button>
-<button onclick="scaleOff()">Scale off.</button>
+<div id="topbar">
+<div id="topbarborder">
+
+<div class="options">
+<img src="options.jpg" id="options">
+<div class="dropdown">
+
+<button onclick="scaleOn()">Scale on.</button><br>
+<button onclick="scaleOff()">Scale off.</button><br>
+<button onclick="scaleToggle()">Scale toggle.</button>
+
+</div>
+</div>
+
+<table class="navButtons">
+<tr>
+<td>
+<a href="index.html">
+<p class="content">Home</p>
+</a>
+</td>
+<td>
+<a href="effects.html">
+<p class="content">Effects</p>
+</a>
+</td>
+<td>
+<a href="illegal_logging.html">
+<p class="content">Illegal logging</p>
+</a>
+</td>
+<td>
+<a href="preventions.html">
+<p class="content">Preventions</p>
+</a>
+</td>
+</tr>
+</table>
+
+</div>
+</div>
+
+<div class="parallax" class="banner"></div>
+
+<center>
+<div class="box">
+<p class="title">Over view.</p>
+</div>
+</center>
+
+<div class="scale" id="content">
+<div id="content_border">
 
 <p>
 Test.
 </p>
 
 </div>
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 </body>
 </html>
